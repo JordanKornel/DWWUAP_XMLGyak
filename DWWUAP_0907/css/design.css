@@ -1,0 +1,29 @@
+.cim{
+    background-color: black;
+    color: white;
+}
+
+.bevezeto{
+    background-color: aqua;
+}
+
+.kozepre{
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+.jobbsarok{
+    text-align: right;
+    
+}
+.margintop{
+    margin-top: 10px;
+}
+.marginbottom{
+    margin-bottom: 10px;
+}
+.capitalized{
+    text-transform: capitalize;
+}
