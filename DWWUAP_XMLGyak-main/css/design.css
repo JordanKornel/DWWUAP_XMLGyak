@@ -1,0 +1,99 @@
+.cim{
+    background-color: black;
+    color: white;
+}
+.black{
+    color: black;
+}
+.beginning{
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+    background-color: white;
+    opacity: 52%;
+    width: 50%;
+}
+.smallmargin{
+    margin-left: 15px;
+    text-align: center;
+
+}
+.photos{
+    opacity: 70%;
+}
+
+.middle{
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+.footerright{
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;   /* Height of the footer */
+   
+    
+}
+.margintop{
+    margin-top: 10px;
+}
+.marginbottom{
+    margin-bottom: 10px;
+}
+.capitalized{
+    text-transform: capitalize;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.bg {
+    background-image: url("../img/kep.png");
+    height: 100%; 
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+.table_header{
+    width: 100%;
+    text-align: center;
+}
+h1{
+    color: white;
+}
+
+.button {
+  text-decoration: none;
+  background-color: rgba(236, 229, 167, 0.2);
+  border: 1px solid #e7bf84bb;
+  color: #b38814;
+  display: flexbox;
+  font-size: 1.5em;
+  padding: 2%;
+  transition: 0.6s;
+  scale: 86%;
+}
+.button:hover {
+  text-decoration: none;
+  background-color: black;
+  border-color: white;
+  color: black;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 5; }
+    .div2 { grid-area: 2 / 2 / 5 / 4; }
+    .div3 { grid-area: 2 / 1 / 5 / 2; }
+    .div4 { grid-area: 2 / 4 / 5 / 5; }
+    .div5 { grid-area: 5 / 1 / 6 / 5; }
