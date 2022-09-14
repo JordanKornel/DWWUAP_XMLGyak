@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<mozi>
+    <film id="txn_nxm_2jb" mufaj="horror">
+        <rendezo id="nzk_4xm_2jb" nev="alex">
+            <eletkor>34</eletkor>
+            <Cim>Miskolc, Egyetem út 1, 3515</Cim>
+        </rendezo>
+        <szinesz id="u5q_4xm_2jb" nev="Madison_Ivy"/>
+        <iro id="trv_4xm_2jb">
+            <eletkor>26</eletkor>
+            <Cim>Miskolc, Egyetem út 5, 3515</Cim>
+        </iro>
+    </film>
+</mozi>

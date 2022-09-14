@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<XY_orarend>
+    <ora id="0.1" tipus="Gyakorlat">
+        <targy>Web technológiák</targy>
+
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>8 és 18</tol>
+            <ig>10 és 20</ig>
+        </idopont>
+
+        <helyszin>XXX A1 III. em. 305-</helyszin>
+
+        <oktato>Agárdi Anita</oktato>
+
+        <szak>Programtervező informatikus</szak>
+    </ora>
+
+    <ora id="0.2" tipus="Gyakorlat Elmélet">
+        <targy>Mesterséges Intelligencia</targy>
+
+        <idopont>
+            <nap>Kedd és Szerda</nap>
+            <tol>9 és 8</tol>
+            <ig>12 és 19</ig>
+        </idopont>
+
+        <helyszin>II A2 mfsz.In15</helyszin>
+
+        <oktato>Kunné Dr. Tamás JuditFazekas Levente</oktato>
+
+        <szak>Programtervező informatikus</szak>
+    </ora>
+
+    <ora id="0.3" tipus="Gyakorlat Elmélet">
+        <targy>Adatkezelés XML-ben</targy>
+
+        <idopont>
+            <nap>Kedd és Szerda</nap>
+            <tol>12 és 12</tol>
+            <ig>14 és 14</ig>
+        </idopont>
+
+        <helyszin>XXXII A1 magasfszIn101 In I. e. 101</helyszin>
+
+        <oktato>Dr. Bednarik László</oktato>
+
+        <szak>Programtervező informatikus</szak>
+    </ora>
+
+    <ora id="0.4" tipus="Gyakorlat Elmélet">
+        <targy>Algoritmusok és vizsgálat</targy>
+
+        <idopont>
+            <nap>Kedd</nap>
+            <tol>14</tol>
+            <ig>18</ig>
+        </idopont>
+
+        <helyszin>X A1 II. em. 218-</helyszin>
+
+        <oktato>Dr. Házy Attila</oktato>
+
+        <szak>Programtervező informatikus</szak>
+    </ora>
+
+    <ora id="0.5" tipus="Gyakorlat Elmélet">
+        <targy>Vállalati információs ren</targy>
+
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>16</tol>
+            <ig>20</ig>
+        </idopont>
+
+        <helyszin>In103 In I. em.103</helyszin>
+
+        <oktato>Dr. Sasvári Péter</oktato>
+
+        <szak>Programtervező informatikus</szak>
+    </ora>
+
+</XY_orarend>
