@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<konferencia>
+    <cim>Valamilyen utca</cim>
+    <hallgatok>
+        <hallgato id="1">
+            <nev>
+                Jordan Kornel
+            </nev>
+            <lakcim>
+                Petőfi 10
+            </lakcim>
+        </hallgato>
+        <hallgato id="2">
+            <nev>
+                Jordan Attila
+            </nev>
+            <lakcim>
+                Petőfi 20
+            </lakcim>
+        </hallgato>
+    </hallgatok>
+    <helyszin>
+        Miskolci Egyetem kollégium
+    </helyszin>
+    <eloado id="16">
+        <nev>
+            Dr. Kiss Pista
+        </nev>
+        <adoszam>
+            6996
+        </adoszam>
+        <lakcim>
+            Valami út 20
+        </lakcim>
+    </eloado>
+    <eloado id="17">
+        <nev>
+            Dr. Nagy Pista
+        </nev>
+        <adoszam>
+            9669
+        </adoszam>
+        <lakcim>
+            Valami út 30
+        </lakcim>
+    </eloado>
+    <datum>
+        2022.09.20.
+    </datum>
+</konferencia>
