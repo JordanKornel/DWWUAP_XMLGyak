@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE JK_adatbazis SYSTEM "JK_adatbazis.dtd">
+ 
+<JK_adatbazis>
+
+  <dolgozo kod="1">
+    <nev>Valaki</nev>
+    <fizetes>100000</fizetes>
+  </dolgozo>
+ 
+</JK_adatbazis>
