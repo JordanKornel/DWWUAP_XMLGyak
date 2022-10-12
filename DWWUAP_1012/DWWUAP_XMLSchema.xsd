@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:element name="vendeglatas">
+    <xs:complexType>
+        <xs:sequences>
+            
+        </xs:sequences>
+    </xs:complexType>
+</xs:element>
