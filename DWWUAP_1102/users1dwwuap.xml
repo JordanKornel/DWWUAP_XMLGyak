@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<users xmlns="domdwwuap">
+  <user id="1">
+    <firstname>Jordan</firstname>
+    <lastname>Kornel</lastname>
+    <profession>Programtervezo informatikus</profession>
+  </user>
+  <user id="2">
+    <firstname>Kiss</firstname>
+    <lastname>Lajos</lastname>
+    <profession>Programtervezo informatikus</profession>
+  </user>
+  <user id="3">
+    <firstname>Petofi</firstname>
+    <lastname>Sandor</lastname>
+    <profession>Mernok informatikus</profession>
+  </user>
+</users>
