@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<vadaszvizsga xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaDWWUAP.xsd">
+
+
+
+
+<vadasz vadasz-egyesulet="ve1" V_ID="1">
+    <telef_szam>06202222222</telef_szam>
+    <Email>valami@Email.com</Email>
+    <V_nev>Kiss</V_nev>
+    <K_nev>Pista</K_nev>
+    <elert_pont>5</elert_pont>
+    <kor>30</kor>
+</vadasz>    
+
+<vadasz vadasz-egyesulet="ve2" V_ID="2">
+    <telef_szam>06202222223</telef_szam>
+    <Email>valami2@Email.com</Email>
+    <V_nev>Nagy</V_nev>
+    <K_nev>Pista</K_nev>
+    <elert_pont>6</elert_pont>
+    <kor>40</kor>
+</vadasz>    
+
+<vadasz vadasz-egyesulet="ve3" V_ID="3">
+    <telef_szam>06202222224</telef_szam>
+    <Email>valam3@Email.com</Email>
+        <V_nev>Valamilyen</V_nev>
+        <K_nev>Pista</K_nev>
+    <elert_pont>7</elert_pont>
+    <kor>50</kor>
+</vadasz>    
+
+
+
+
+<egyesulet E_ID="1" vadasz-felugyelo="1">
+    <telekhely>Miskolc</telekhely>
+    <alapitas_eve>1969</alapitas_eve>
+    <e_nev>Kis Egyesület</e_nev>
+</egyesulet>
+
+<egyesulet E_ID="2" vadasz-felugyelo="2">
+    <telekhely>Pest</telekhely>
+    <alapitas_eve>1980</alapitas_eve>
+    <e_nev>Nagy Egyesület</e_nev>
+</egyesulet>
+
+<egyesulet E_ID="3" vadasz-felugyelo="3">
+    <telekhely>Debrecen</telekhely>
+    <alapitas_eve>1990</alapitas_eve>
+    <e_nev>Gyors Egyesület</e_nev>
+</egyesulet>
+
+
+
+
+<felugyelo F_ID="1" felugyelo-vizsga="1">
+    <V_nev>Kiss</V_nev>
+    <K_nev>Lajos</K_nev>
+    <Email>lajos@gmail.com</Email>
+    <telef_szam>06203334444</telef_szam>
+</felugyelo>
+
+<felugyelo F_ID="2" felugyelo-vizsga="2">
+    <V_nev>Nagy</V_nev>
+    <K_nev>Lajos</K_nev>
+    <Email>lajosanagy@gmail.com</Email>
+    <telef_szam>06203334456</telef_szam>
+</felugyelo>
+
+<felugyelo F_ID="3" felugyelo-vizsga="3">
+    <V_nev>Kiss</V_nev>
+    <K_nev>Ferenc</K_nev>
+    <Email>ferenc@gmail.com</Email>
+    <telef_szam>06203338888</telef_szam>
+</felugyelo>
+
+
+
+
+<vizsga vizsga_ID="1">
+    <I_szam>3666</I_szam>
+    <utca>Petőfi</utca>
+    <hazszam>1</hazszam>
+    <gyakorlat>Kinti</gyakorlat>
+    <szobeli_kerdes>Valami1</szobeli_kerdes>
+    <irasbeli>Valami3</irasbeli>
+</vizsga>
+
+<vizsga vizsga_ID="2">
+    <I_szam>3700</I_szam>
+    <utca>Nagy</utca>
+    <hazszam>7</hazszam>
+    <gyakorlat>Kinti</gyakorlat>
+    <szobeli_kerdes>Valami7</szobeli_kerdes>
+    <irasbeli>Valami4</irasbeli>
+</vizsga>
+
+<vizsga vizsga_ID="3">
+    <I_szam>3800</I_szam>
+    <utca>Fekete</utca>
+    <hazszam>30</hazszam>
+    <gyakorlat>Kinti</gyakorlat>
+    <szobeli_kerdes>Valami3</szobeli_kerdes>
+    <irasbeli>Valami8</irasbeli>
+</vizsga>
+
+
+
+
+<vizsgalja Vi_Va_Vi="1" Va_Vi_Va="1">
+<datum>2022.11.09.</datum>
+</vizsgalja>
+
+<vizsgalja Vi_Va_Vi="2" Va_Vi_Va="2">
+    <datum>2022.11.16.</datum>
+</vizsgalja>
+
+<vizsgalja Vi_Va_Vi="3" Va_Vi_Va="3">
+    <datum>2022.11.23.</datum>
+</vizsgalja>
+
+
+
+
+<felugyeli V_F_F="VFF1" V_F_V="VFV1"></felugyeli>
+<felugyeli V_F_F="VFF2" V_F_V="VFV2"></felugyeli>
+<felugyeli V_F_F="VFF3" V_F_V="VFV3"></felugyeli>
+
+
+</vadaszvizsga>
