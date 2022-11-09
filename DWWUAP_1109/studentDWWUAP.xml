@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<class>
+    <student id="01">
+        <firstname>Jordán</firstname>
+        <lastname>Kornél</lastname>
+        <nickname>XMLman</nickname>
+        <age>22</age>
+    </student>
+    <student id="02">
+        <firstname>Nagy</firstname>
+        <lastname>Zoli</lastname>
+        <nickname>zolka</nickname>
+        <age>80</age>
+    </student>
+    <student id="03">
+        <firstname>Kiss</firstname>
+        <lastname>Dezső</lastname>
+        <nickname>Dezsi</nickname>
+        <age>21</age>
+    </student>
+</class>
