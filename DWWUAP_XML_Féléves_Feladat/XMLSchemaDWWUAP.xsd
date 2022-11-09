@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="telef_szam" type="xs:integer" />
+<xs:element name="Email" type="xs:string" />
+<xs:element name="V_nev" type="xs:string" />
+<xs:element name="K_nev" type="xs:string" />
+<xs:element name="elert_pont" type="xs:integer" />
+<xs:element name="kor" type="xs:integer" />
+<xs:element name="telekhely" type="xs:string" />
+<xs:element name="alapitas_eve" type="xs:integer" />
+<xs:element name="e_nev" type="xs:string" />
+<xs:element name="I_szam" type="xs:integer" />
+<xs:element name="utca" type="xs:string" />
+<xs:element name="hazszam" type="xs:integer" />
+<xs:element name="gyakorlat" type="xs:string" />
+<xs:element name="szobeli_kerdes" type="xs:string" />
+<xs:element name="irasbeli" type="xs:string" />
+<xs:element name="datum" type="xs:string" />
+
+
+<xs:attribute name="V_F_F" type="xs:string" />
+<xs:attribute name="V_F_V" type="xs:string" />
+<xs:attribute name="V_ID" type="xs:integer" />
+<xs:attribute name="vadasz-egyesulet" type="xs:string" />
+<xs:attribute name="E_ID" type="xs:integer" />
+<xs:attribute name="vadasz-felugyelo" type="xs:integer" />
+<xs:attribute name="F_ID" type="xs:integer" />
+<xs:attribute name="felugyelo-vizsga" type="xs:integer" />
+<xs:attribute name="vizsga_ID" type="xs:integer" />
+<xs:attribute name="Vi_Va_Vi" type="xs:integer" />
+<xs:attribute name="Va_Vi_Va" type="xs:integer" />
+
+
+    <xs:complexType name="vadaszTipus">
+        <xs:sequence>
+            <xs:element ref="telef_szam"/>
+            <xs:element ref="Email"/>
+            <xs:element ref="V_nev"/>
+            <xs:element ref="K_nev"/>
+            <xs:element ref="elert_pont"/>
+            <xs:element ref="kor"/>
+        </xs:sequence>
+        <xs:attribute ref="V_ID" use="required"/>
+        <xs:attribute ref="vadasz-egyesulet" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="egyesuletTipus">
+        <xs:sequence>
+            <xs:element ref="telekhely"/>
+            <xs:element ref="alapitas_eve"/>
+            <xs:element ref="e_nev"/>
+        </xs:sequence>
+        <xs:attribute ref="vadasz-felugyelo" use="required"/>
+        <xs:attribute ref="E_ID" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="felugyeloTipus">
+        <xs:sequence>
+            <xs:element ref="V_nev"/>
+            <xs:element ref="K_nev"/>
+            <xs:element ref="Email"/>
+            <xs:element ref="telef_szam"/>
+        </xs:sequence>
+        <xs:attribute ref="felugyelo-vizsga" use="required"/>
+        <xs:attribute ref="F_ID" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="vizsgaTipus">
+        <xs:sequence>
+            <xs:element ref="I_szam"/>
+            <xs:element ref="utca"/>
+            <xs:element ref="hazszam"/>
+            <xs:element ref="gyakorlat"/>
+            <xs:element ref="szobeli_kerdes"/>
+            <xs:element ref="irasbeli"/>
+        </xs:sequence>
+        <xs:attribute ref="vizsga_ID" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="vizsgaljaTipus">
+        <xs:sequence>
+            <xs:element ref="datum"/>
+        </xs:sequence>
+        <xs:attribute ref="Vi_Va_Vi" use="required"/>
+        <xs:attribute ref="Va_Vi_Va" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="felugyeliTipus">
+        <xs:attribute ref="V_F_F" use="required"/>
+        <xs:attribute ref="V_F_V" use="required"/>
+    </xs:complexType>
+
+<xs:element name="vadaszvizsga">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="vadasz" type="vadaszTipus" maxOccurs="unbounded" />
+            <xs:element name="egyesulet" type="egyesuletTipus" maxOccurs="unbounded" />
+            <xs:element name="felugyelo" type="felugyeloTipus" maxOccurs="unbounded" />
+            <xs:element name="vizsga" type="vizsgaTipus" maxOccurs="unbounded" />
+            <xs:element name="vizsgalja" type="vizsgaljaTipus" maxOccurs="unbounded" />
+            <xs:element name="felugyeli" type="felugyeliTipus" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:key name="Vadasz_kulcs">
+        <xs:selector xpath="vadasz" />
+        <xs:field xpath="@V_ID" />
+    </xs:key>
+
+    <xs:key name="egyesulet_kulcs">
+        <xs:selector xpath="egyesulet" />
+        <xs:field xpath="@E_ID" />
+    </xs:key>
+
+    <xs:key name="felugyelo_kulcs">
+        <xs:selector xpath="felugyelo" />
+        <xs:field xpath="@F_ID" />
+    </xs:key>
+
+    <xs:key name="vizsga_kulcs">
+        <xs:selector xpath="vizsga" />
+        <xs:field xpath="@vizsga_ID" />
+    </xs:key>
+
+    <xs:keyref refer="Vadasz_kulcs" name="vadasz_idegen_kulcs">
+        <xs:selector xpath="egyesulet" />
+        <xs:field xpath="@vadasz-egyesulet" />
+    </xs:keyref>
+
+    <xs:keyref refer="egyesulet_kulcs" name="vizsga_idegen_kulcs">
+        <xs:selector xpath="felugyelo" />
+        <xs:field xpath="@vadasz-felugyelo" />
+    </xs:keyref>
+
+    <xs:keyref refer="felugyelo_kulcs" name="vizsga2_idegen_kulcs">
+        <xs:selector xpath="felugyeli" />
+        <xs:field xpath="@felugyelo-vizsga" />
+    </xs:keyref>
+
+    <xs:keyref refer="felugyelo_kulcs" name="vizsga3_idegen_kulcs">
+        <xs:selector xpath="vizsga" />
+        <xs:field xpath="@Vi_Va_Vi" />
+    </xs:keyref>
+
+    <xs:keyref refer="felugyelo_kulcs" name="vadasz2_idegen_kulcs">
+        <xs:selector xpath="vadasz" />
+        <xs:field xpath="@Va_Vi_Va" />
+    </xs:keyref>
+
+    <xs:keyref refer="felugyelo_kulcs" name="felugyelo_idegen_kulcs">
+        <xs:selector xpath="felugyelo" />
+        <xs:field xpath="@V_F_F" />
+    </xs:keyref>
+
+    <xs:keyref refer="vizsga_kulcs" name="vadasz3_idegen_kulcs">
+        <xs:selector xpath="vadasz" />
+        <xs:field xpath="@V_F_V" />
+    </xs:keyref>
+
+
+</xs:element>
+
+</xs:schema>
