@@ -2,6 +2,8 @@
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
+<!-- Adatok típusai-->
+
 <xs:element name="telef_szam" type="xs:integer" />
 <xs:element name="Email" type="xs:string" />
 <xs:element name="V_nev" type="xs:string" />
@@ -32,6 +34,7 @@
 <xs:attribute name="Vi_Va_Vi" type="xs:integer" />
 <xs:attribute name="Va_Vi_Va" type="xs:integer" />
 
+<!-- Komplex típusok-->
 
     <xs:complexType name="vadaszTipus">
         <xs:sequence>
@@ -103,6 +106,9 @@
         </xs:sequence>
     </xs:complexType>
 
+
+<!-- Kulcsok -->
+
     <xs:key name="Vadasz_kulcs">
         <xs:selector xpath="vadasz" />
         <xs:field xpath="@V_ID" />
@@ -122,6 +128,8 @@
         <xs:selector xpath="vizsga" />
         <xs:field xpath="@vizsga_ID" />
     </xs:key>
+
+    <!-- Idegen kulcsok-->
 
     <xs:keyref refer="Vadasz_kulcs" name="vadasz_idegen_kulcs">
         <xs:selector xpath="egyesulet" />
