@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<?xml-stylesheet type = "text/xsl" href = "studentDWWUAP.xsl"?>
+
+<class>
+    <student id="01">
+        <vezeteknev>Jordan</vezeteknev>
+        <keresztnev>Kornel</keresztnev>
+        <becenev>Komi</becenev>
+        <kor>22</kor>
+        <fizetes>16000</fizetes>
+    </student>
+    <student id="02">
+        <vezeteknev>Nyeste</vezeteknev>
+        <keresztnev>Agoston</keresztnev>
+        <becenev>Nyesi</becenev>
+        <kor>21</kor>
+        <fizetes>1000</fizetes>
+    </student>
+    <student id="03">
+        <vezeteknev>Valaki</vezeteknev>
+        <keresztnev>Sandor</keresztnev>
+        <becenev>Sanyi</becenev>
+        <kor>30</kor>
+        <fizetes>30000</fizetes>
+    </student>
+</class>
