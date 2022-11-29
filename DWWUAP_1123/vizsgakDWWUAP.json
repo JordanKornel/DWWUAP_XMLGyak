@@ -1,0 +1,39 @@
+{ "_id": "DWWUAP",
+    "vizsgak":{
+        "vizsga": [
+            {
+            "kurzus": "Adatkezelés XML-ben",
+            "helyszin": "Inf. épület",
+            "idopont":{
+                "nap": "kedd",
+                "tol": 12,
+                "ig": 14
+            },
+            "oktato": "Dr. Bednarik László",
+            "jegy": 4
+        },
+        {
+            "kurzus": "Mesterséges Intelligencia alapjai",
+            "helyszin": "Galeria A/2",
+            "idopont":{
+                "nap": "hetfo",
+                "tol": 9,
+                "ig": 12
+            },
+            "oktato": "Kunné Dr. Tamás Judit",
+            "jegy": 4
+        },
+        {
+            "kurzus": "Webtechnológiák I.",
+            "helyszin": "Inf. épület",
+            "idopont":{
+                "nap": "hétfő",
+                "tol": 16,
+                "ig": 18
+            },
+            "oktato": "Agárdi Anita",
+            "jegy": 4
+        }
+        ]
+    }
+}
