@@ -2,9 +2,6 @@
 
 <vadaszvizsga xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaDWWUAP.xsd">
 
-
-
-
 <vadasz vadasz-egyesulet="ve1" V_ID="1">
     <telef_szam>06202222222</telef_szam>
     <Email>valami@Email.com</Email>
@@ -32,9 +29,6 @@
     <kor>50</kor>
 </vadasz>    
 
-
-
-
 <egyesulet E_ID="1" vadasz-felugyelo="1">
     <telekhely>Miskolc</telekhely>
     <alapitas_eve>1969</alapitas_eve>
@@ -52,9 +46,6 @@
     <alapitas_eve>1990</alapitas_eve>
     <e_nev>Gyors Egyesület</e_nev>
 </egyesulet>
-
-
-
 
 <felugyelo F_ID="1" felugyelo-vizsga="1">
     <V_nev>Kiss</V_nev>
@@ -76,9 +67,6 @@
     <Email>ferenc@gmail.com</Email>
     <telef_szam>06203338888</telef_szam>
 </felugyelo>
-
-
-
 
 <vizsga vizsga_ID="1">
     <I_szam>3666</I_szam>
@@ -107,9 +95,6 @@
     <irasbeli>Valami8</irasbeli>
 </vizsga>
 
-
-
-
 <vizsgalja Vi_Va_Vi="1" Va_Vi_Va="1">
 <datum>2022.11.09.</datum>
 </vizsgalja>
@@ -122,12 +107,8 @@
     <datum>2022.11.23.</datum>
 </vizsgalja>
 
-
-
-
 <felugyeli V_F_F="VFF1" V_F_V="VFV1"></felugyeli>
 <felugyeli V_F_F="VFF2" V_F_V="VFV2"></felugyeli>
 <felugyeli V_F_F="VFF3" V_F_V="VFV3"></felugyeli>
-
 
 </vadaszvizsga>
